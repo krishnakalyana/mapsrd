@@ -1,8 +1,11 @@
-import { Outlet } from "react-router-dom";
+import PrivateLayout from "@/components/layout/privateLayout";
+import { useCookies } from "react-cookie";
+import { Navigate, Outlet } from "react-router-dom";
 
 export default function PrivateRoute() {
-    return <div>
-        Private
-        <div><Outlet /> </div>
-    </div>
+    const [cookies, setCookie, removeCookie] = useCookies(['cookie-name']);
+    if (!cookies.token) {
+        return <Navigate to={"/login"} replace="true" />
+    }
+    return <PrivateLayout />
 }

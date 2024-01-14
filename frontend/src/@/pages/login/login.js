@@ -38,11 +38,11 @@ const Login = () => {
                 <ModeToggle />
             </CardHeader>
             <CardContent className="flex flex-col gap-3">
-                <Input placeholder="Username" type="email" />
-                <Input placeholder="Password" type="email" />
+                <Input placeholder="Username" type="email" disabled={loading} />
+                <Input placeholder="Password" type="email" disabled={loading} />
             </CardContent>
             <CardFooter>
-                <Button className="w-full" onClick={loginCall}>Login</Button>
+                <Button className="w-full" onClick={loginCall} disabled={loading}>Login</Button>
             </CardFooter>
         </Card>
     </Card>
