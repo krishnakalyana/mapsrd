@@ -1,13 +1,15 @@
-import logo from './logo.svg';
+import { ThemeProvider } from "@/customComponents/theme-provider"
+
 import './App.css';
+import Login from "@/pages/login";
 
 function App() {
   return (
-    <div className="App">
-      <h1 className="text-3xl font-bold underline">
-        Hello world!
-      </h1>
-    </div>
+    <ThemeProvider defaultTheme="dark" storageKey="storage-key">
+      
+      <Login />
+
+    </ThemeProvider>
   );
 }
 
