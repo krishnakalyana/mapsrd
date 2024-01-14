@@ -36,7 +36,9 @@ app.post("/login", async (req, res) => {
         }
         const token = jwt.sign(data, process.env.JWT_SECRET_KEY)
         res.cookie('token', token)
-        res.send({ isSuccess: true, message: "success", data: userData });
+        setTimeout(() => {
+            res.send({ isSuccess: true, message: "success", data: userData });
+        }, 8000)
     }
 });
 
