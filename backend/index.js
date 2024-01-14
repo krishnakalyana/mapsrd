@@ -32,6 +32,7 @@ app.post("/login", async (req, res) => {
     else {
         let data = {
             time: Date(),
+            fullName: userData.name,
             email: userData.email
         }
         const token = jwt.sign(data, process.env.JWT_SECRET_KEY)
