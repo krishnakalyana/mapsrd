@@ -9,65 +9,65 @@ body,
 }
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 224 71.4% 4.1%;
-
-    --card: 0 0% 100%;
-    --card-foreground: 224 71.4% 4.1%;
- 
-    --popover: 0 0% 100%;
-    --popover-foreground: 224 71.4% 4.1%;
- 
-    --primary: 220.9 39.3% 11%;
-    --primary-foreground: 210 20% 98%;
- 
-    --secondary: 220 14.3% 95.9%;
-    --secondary-foreground: 220.9 39.3% 11%;
- 
-    --muted: 220 14.3% 95.9%;
-    --muted-foreground: 220 8.9% 46.1%;
- 
-    --accent: 220 14.3% 95.9%;
-    --accent-foreground: 220.9 39.3% 11%;
- 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 20% 98%;
-
-    --border: 220 13% 91%;
-    --input: 220 13% 91%;
-    --ring: 224 71.4% 4.1%;
- 
+    --background: 40 20% 95%; /* Light gray for background */
+    --foreground: 40 20% 15%; /* Dark gray for foreground */
+  
+    --card: 40 20% 95%; /* Light gray for card */
+    --card-foreground: 40 20% 15%; /* Dark gray for card foreground */
+  
+    --popover: 40 20% 95%; /* Light gray for popover */
+    --popover-foreground: 40 20% 15%; /* Dark gray for popover foreground */
+  
+    --primary: 30 100% 70%; /* Medium orange for primary */
+    --primary-foreground: 40 20% 5%; /* Dark gray for primary foreground */
+  
+    --secondary: 40 10% 90%; /* Light gray for secondary */
+    --secondary-foreground: 30 100% 70%; /* Medium orange for secondary foreground */
+  
+    --muted: 40 10% 90%; /* Light gray for muted */
+    --muted-foreground: 40 10% 60%; /* Light-medium gray for muted foreground */
+  
+    --accent: 30 100% 70%; /* Medium orange for accent */
+    --accent-foreground: 40 20% 5%; /* Dark gray for accent foreground */
+  
+    --destructive: 0 100% 40%; /* Medium orange for destructive */
+    --destructive-foreground: 40 20% 5%; /* Dark gray for destructive foreground */
+  
+    --border: 40 10% 90%; /* Light gray for border */
+    --input: 40 10% 90%; /* Light gray for input */
+    --ring: 30 100% 90%; /* Light orange for ring */
+  
     --radius: 0.5rem;
   }
- 
+  
   .dark {
-    --background: 224 71.4% 4.1%;
-    --foreground: 210 20% 98%;
- 
-    --card: 224 71.4% 4.1%;
-    --card-foreground: 210 20% 98%;
- 
-    --popover: 224 71.4% 4.1%;
-    --popover-foreground: 210 20% 98%;
- 
-    --primary: 210 20% 98%;
-    --primary-foreground: 220.9 39.3% 11%;
- 
-    --secondary: 215 27.9% 16.9%;
-    --secondary-foreground: 210 20% 98%;
- 
-    --muted: 215 27.9% 16.9%;
-    --muted-foreground: 217.9 10.6% 64.9%;
- 
-    --accent: 215 27.9% 16.9%;
-    --accent-foreground: 210 20% 98%;
- 
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 20% 98%;
- 
-    --border: 215 27.9% 16.9%;
-    --input: 215 27.9% 16.9%;
-    --ring: 216 12.2% 83.9%;
+    --background: 40 20% 5%; /* Dark gray for background in dark mode */
+    --foreground: 40 20% 95%; /* Light gray for foreground in dark mode */
+  
+    --card: 40 20% 5%; /* Dark gray for card in dark mode */
+    --card-foreground: 40 20% 95%; /* Light gray for card foreground in dark mode */
+  
+    --popover: 40 20% 5%; /* Dark gray for popover in dark mode */
+    --popover-foreground: 40 20% 95%; /* Light gray for popover foreground in dark mode */
+  
+    --primary: 30 100% 70%; /* Light orange for primary in dark mode */
+    --primary-foreground: 40 20% 5%; /* Dark gray for primary foreground in dark mode */
+  
+    --secondary: 40 10% 20%; /* Dark gray for secondary in dark mode */
+    --secondary-foreground: 30 100% 95%; /* Light orange for secondary foreground in dark mode */
+  
+    --muted: 40 10% 20%; /* Dark gray for muted in dark mode */
+    --muted-foreground: 40 10% 60%; /* Light-medium gray for muted foreground in dark mode */
+  
+    --accent: 30 100% 95%; /* Light orange for accent in dark mode */
+    --accent-foreground: 40 20% 5%; /* Dark gray for accent foreground in dark mode */
+  
+    --destructive: 0 100% 40%; /* Medium orange for destructive in dark mode */
+    --destructive-foreground: 40 20% 5%; /* Dark gray for destructive foreground in dark mode */
+  
+    --border: 40 10% 20%; /* Dark gray for border in dark mode */
+    --input: 40 10% 20%; /* Dark gray for input in dark mode */
+    --ring: 30 100% 90%; /* Light orange for ring in dark mode */
   }
 }
  

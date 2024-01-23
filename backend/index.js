@@ -42,5 +42,16 @@ app.post("/login", async (req, res) => {
         }, 8000)
     }
 });
+app.get("/getcordinates/:country", async (req, res) => {
+    console.log(req.headers.cookie);
+    if (req?.params?.country === "paris") {
+        setTimeout(() => {
+            res.status(200)
+            res.send({ isSuccess: true, message: "success", data: [2.3522, 48.8566] })
+        }, 10000)
+    } else {
+        res.send({ isSuccess: true, message: "success", data: [2.3522, 48.8566] })
+    }
+})
 
 

@@ -29,7 +29,7 @@ const Login = () => {
         }
     }, [data])
 
-    return <Card className="flex justify-center items-center w-full h-full ">
+    return <div className="bg-primary dark:bg-black flex justify-center items-center w-full h-full ">
         <Card className="py-8 w-3/12">
             <CardHeader className=" w-full flex flex-row items-baseline justify-between">
                 <CardTitle>
@@ -42,10 +42,10 @@ const Login = () => {
                 <Input placeholder="Password" type="email" disabled={loading} />
             </CardContent>
             <CardFooter>
-                <Button className="w-full" onClick={loginCall} disabled={loading}>Login</Button>
+                <Button className="w-full" onClick={loginCall} disabled={loading} variant="">Login</Button>
             </CardFooter>
         </Card>
-    </Card>
+    </div>
 
 }
 export default Login

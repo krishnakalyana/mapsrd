@@ -3,7 +3,7 @@ import { Card } from "../ui/card";
 import { ModeToggle } from "../ui/toggle-theme";
 import { jwtDecode } from "jwt-decode";
 import React, { useMemo } from "react";
-import {  MapPinned } from "lucide-react";
+import {  AudioWaveform, MapPinned } from "lucide-react";
 import { Button } from "../ui/button";
 import {
   DropdownMenu,
@@ -26,18 +26,17 @@ export default function Navbar (){
       return decoded.fullName
     }
   }, [cookie]);
-    return <Card className="p-2 bg-accent-foreground flex items-center justify-between  opacity-80" >
+    return <Card className="p-0 m-0 flex items-center justify-between " >
       <DropdownMenu>
       <DropdownMenuTrigger asChild>
-      <Button variant="secondary" >
-       <MapPinned className=" mr-2 h-4 w-4"  /> Maps
+      <Button variant="outlined" >
+       <AudioWaveform  /> 
        </Button>
       </DropdownMenuTrigger>
       <DropdownMenuContent className="w-56">
         <DropdownMenuLabel>Where to ?</DropdownMenuLabel>
         <DropdownMenuSeparator />
         <DropdownMenuRadioGroup value={position} onValueChange={(e)=>{
-          console.log(e);
           navigate(e)
           setPosition(e)
         }}>
@@ -47,14 +46,14 @@ export default function Navbar (){
       </DropdownMenuContent>
     </DropdownMenu>
       
-       <div >
-       <h5 className="text-accent text-sm m-0 font-thin">Hey 
+       {/* <div >
+       <h5 className=" text-sm m-0 font-thin">Hey 
        <span className="font-medium	tracking-widest text-lg">
         {" "}{ fullName} 
         </span>
         {" "}!
         </h5>
-       </div>
+       </div> */}
        <ModeToggle/>
     </Card>
 }
